@@ -104,17 +104,8 @@ and open the template in the editor.
          if(isset($_GET['withdrawButton']))
         {
            echo $_SESSION['a_customer']->get_customer_account()->withdraw($_GET['amountText']);
-        }
-                
-        
-//        $a_customer->get_customer_account()->deposit(50000);
-//        
-//        echo  $a_customer->get_customer_account()->get_balance().'<br/>';
-//        
-//        $a_customer->get_customer_account()->withdraw(5000);
-//        
-//        echo  $a_customer->get_customer_account()->get_balance();
-        
+        }                
+            
         ?>
     </body>
 </html>

@@ -9,7 +9,12 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
     </head>
-    <body>      
+    <body>
+        <form action="index.php">
+            
+            <input type="submit" name="backButton" value="Back">
+            
+        </form>
         <?php
        require_once 'customer.php';
         

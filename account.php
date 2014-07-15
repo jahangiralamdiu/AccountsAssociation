@@ -21,16 +21,28 @@ class Account
 
     public function deposit ($amount)
     {
-        $this->balance += $amount;
+        $this->balance = $this->balance + $amount;
         
-        return 'Deposited';
+        return "Diposited";
     }
     
     public function withdraw ($amount)
     {
-        $this->balance -= $amount;
-        
+        if($this->balance - $amount >=0 )
+       {
+            
+       $this->balance = $this->balance - $amount; 
+       
         return 'Withdrawn';
+             
+        }
+        
+    else 
+    {
+        
+     return 'Insufficient Balance';
+     
+    }
     }
     public function get_balance() {
         return $this->balance;

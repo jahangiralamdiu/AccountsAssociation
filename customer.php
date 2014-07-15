@@ -25,8 +25,7 @@ class Customer {
 
     public function get_email_address() {
         return $this->email_address;
-    }
-    
+    }    
     /**
      * 
      * @return Account
